@@ -1,0 +1,45 @@
+# Ham ve işlenmiş veri dosyaları
+data/raw/
+data/interim/
+data/processed/
+*.parquet
+
+# Eğitilmiş modeller ve büyük çıktılar
+models/*.joblib
+models/*.pkl
+models/*.onnx
+outputs/
+artifacts/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Ortam ve gizli bilgiler
+.env
+.env.*
+!.env.example
+
+# Editör ve işletim sistemi
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Geçici dosyalar
+*.tmp
+*.log
+~$*
+
+# GitHub Pages yerel derleme çıktıları
+.site-src/
+site/
+.venv-site/

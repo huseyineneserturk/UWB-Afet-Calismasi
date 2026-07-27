@@ -1,0 +1,142 @@
+{
+  "task": "human_presence_binary_classification",
+  "comparison_rule": "same_features_same_split_no_test_tuning",
+  "representation": "amplitude_only",
+  "window_frames": 170,
+  "window_seconds": 10.0,
+  "feature_count": 12,
+  "random_seed": 42,
+  "test_subjects": [
+    "Person 8",
+    "Person 9"
+  ],
+  "files": {
+    "train_empty": 9,
+    "train_human": 307,
+    "test_empty": 3,
+    "test_human": 54
+  },
+  "windows": {
+    "train_empty": 673,
+    "train_human": 1226,
+    "test_empty": 186,
+    "test_human": 212
+  },
+  "models": {
+    "logistic_regression": {
+      "settings": {
+        "scaler": "StandardScaler",
+        "class_weight": "balanced",
+        "max_iter": 2000
+      },
+      "metrics": {
+        "accuracy": 0.9020100502512562,
+        "balanced_accuracy": 0.9037330087238791,
+        "precision_human": 0.9346733668341709,
+        "recall_human": 0.8773584905660378,
+        "f1_human": 0.9051094890510949
+      },
+      "confusion_matrix": [
+        [
+          173,
+          13
+        ],
+        [
+          26,
+          186
+        ]
+      ],
+      "fit_seconds": 0.010205699945800006,
+      "predict_seconds": 0.00048200006131082773
+    },
+    "random_forest": {
+      "settings": {
+        "n_estimators": 400,
+        "max_depth": 8,
+        "min_samples_leaf": 4,
+        "max_features": "sqrt",
+        "class_weight": "balanced_subsample"
+      },
+      "metrics": {
+        "accuracy": 0.7487437185929648,
+        "balanced_accuracy": 0.7374467437614121,
+        "precision_human": 0.7043795620437956,
+        "recall_human": 0.910377358490566,
+        "f1_human": 0.7942386831275721
+      },
+      "confusion_matrix": [
+        [
+          105,
+          81
+        ],
+        [
+          19,
+          193
+        ]
+      ],
+      "fit_seconds": 1.2178255000617355,
+      "predict_seconds": 0.021994699956849217,
+      "feature_importances": [
+        {
+          "feature": "Ortalama kare değişimi",
+          "importance": 0.22916042567902248
+        },
+        {
+          "feature": "En yüksek kare değişimi",
+          "importance": 0.15164594717217644
+        },
+        {
+          "feature": "Ortalama bağıl değişkenlik",
+          "importance": 0.11702652810513356
+        },
+        {
+          "feature": "%90 kare değişimi",
+          "importance": 0.11519494201109977
+        },
+        {
+          "feature": "Hareketli menzil oranı",
+          "importance": 0.11262351008691013
+        },
+        {
+          "feature": "Ortalama bağıl yayılım",
+          "importance": 0.08170921799914836
+        },
+        {
+          "feature": "%90 hareket enerjisi",
+          "importance": 0.05721132570928174
+        },
+        {
+          "feature": "%90 bağıl değişkenlik",
+          "importance": 0.05063267726968001
+        },
+        {
+          "feature": "En yüksek bağıl değişkenlik",
+          "importance": 0.028831903793002635
+        },
+        {
+          "feature": "%90 bağıl yayılım",
+          "importance": 0.023821060297050393
+        },
+        {
+          "feature": "Ortalama hareket enerjisi",
+          "importance": 0.02297518136298122
+        },
+        {
+          "feature": "Tepe / ortanca değişkenlik",
+          "importance": 0.009167280514513114
+        }
+      ]
+    }
+  },
+  "difference_random_forest_minus_logistic": {
+    "balanced_accuracy": -0.166286264962467,
+    "recall_human": 0.03301886792452824
+  },
+  "skipped_file_count": 1,
+  "limitations": [
+    "Karşılaştırma pencere düzeyindedir; bağımsız saha deneyi değildir.",
+    "İnsan-yok sınıfı yalnızca 12 kaynak dosyadan gelir.",
+    "Random Forest ayarları test sonucuna göre değiştirilmemiştir.",
+    "Gerçek enkaz koşulları Rescuer veri setinde yoktur."
+  ]
+}

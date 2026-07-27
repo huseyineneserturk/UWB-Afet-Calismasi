@@ -1,0 +1,104 @@
+{
+  "model": "StandardScaler + LogisticRegression(class_weight='balanced')",
+  "task": "human_presence_binary_classification",
+  "representation": "amplitude_only",
+  "sampling_rate_hz": 17.0,
+  "window_frames": 170,
+  "window_seconds": 10.0,
+  "random_seed": 42,
+  "test_subjects": [
+    "Person 8",
+    "Person 9"
+  ],
+  "files": {
+    "train_empty": 9,
+    "train_human": 307,
+    "test_empty": 3,
+    "test_human": 54
+  },
+  "windows": {
+    "train_empty": 673,
+    "train_human": 1226,
+    "test_empty": 186,
+    "test_human": 212
+  },
+  "metrics": {
+    "accuracy": 0.9020100502512562,
+    "balanced_accuracy": 0.9037330087238791,
+    "precision_human": 0.9346733668341709,
+    "recall_human": 0.8773584905660378,
+    "f1_human": 0.9051094890510949
+  },
+  "confusion_matrix": {
+    "labels": [
+      "human_absent",
+      "human_present"
+    ],
+    "values": [
+      [
+        173,
+        13
+      ],
+      [
+        26,
+        186
+      ]
+    ]
+  },
+  "coefficients_by_absolute_importance": [
+    {
+      "feature": "Ortalama kare değişimi",
+      "coefficient": -8.44329110161889
+    },
+    {
+      "feature": "Hareketli menzil oranı",
+      "coefficient": 4.7269536923987525
+    },
+    {
+      "feature": "%90 kare değişimi",
+      "coefficient": -3.9514399486251035
+    },
+    {
+      "feature": "Tepe / ortanca değişkenlik",
+      "coefficient": 2.387363049958377
+    },
+    {
+      "feature": "%90 hareket enerjisi",
+      "coefficient": 1.7601186529451245
+    },
+    {
+      "feature": "En yüksek kare değişimi",
+      "coefficient": -1.6443397074412607
+    },
+    {
+      "feature": "%90 bağıl değişkenlik",
+      "coefficient": 1.5842440780749005
+    },
+    {
+      "feature": "Ortalama bağıl yayılım",
+      "coefficient": 1.2416690596020936
+    },
+    {
+      "feature": "En yüksek bağıl değişkenlik",
+      "coefficient": -0.836198153953984
+    },
+    {
+      "feature": "Ortalama bağıl değişkenlik",
+      "coefficient": 0.7019380249138568
+    },
+    {
+      "feature": "Ortalama hareket enerjisi",
+      "coefficient": 0.6249405378687253
+    },
+    {
+      "feature": "%90 bağıl yayılım",
+      "coefficient": 0.5198701308919097
+    }
+  ],
+  "skipped_file_count": 1,
+  "limitations": [
+    "Sonuçlar pencere düzeyindedir; bağımsız saha deneyi değildir.",
+    "İnsan-yok sınıfı yalnızca 12 kaynak dosyadan gelir.",
+    "Gerçek enkaz koşulları Rescuer veri setinde yoktur."
+  ]
+}

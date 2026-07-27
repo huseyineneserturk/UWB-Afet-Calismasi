@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="430" viewBox="0 0 1200 430" role="img" aria-labelledby="title desc">
+  <title id="title">Projede yer alan üç veri seti</title>
+  <desc id="desc">Rescuer modelleme, MobiVital ve OMuSense-23 tanıtım amacıyla yer alır.</desc>
+  <rect width="1200" height="430" rx="30" fill="#07111f"/>
+  <text x="65" y="66" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">Üç veri seti, tek modelleme odağı</text>
+  <text x="65" y="99" fill="#94a3b8" font-family="Arial, sans-serif" font-size="17">Yalnızca Rescuer ile model geliştirildi; diğerleri tanıtım amacıyla incelendi.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="140" width="330" height="230" rx="24" fill="#0f766e"/>
+    <text x="90" y="190" fill="#ccfbf1" font-size="17" font-weight="700">MODELLEME ODAĞI</text>
+    <text x="90" y="240" fill="#ffffff" font-size="31" font-weight="700">Rescuer</text>
+    <text x="90" y="280" fill="#ccfbf1" font-size="17">İnsan var / yok kayıtları</text>
+    <text x="90" y="316" fill="#ccfbf1" font-size="17">UWB genlik verisi</text>
+    <rect x="435" y="140" width="330" height="230" rx="24" fill="#172033" stroke="#334155" stroke-width="2"/>
+    <text x="465" y="190" fill="#fbbf24" font-size="17" font-weight="700">VERİ SETİ TANITIMI</text>
+    <text x="465" y="240" fill="#ffffff" font-size="31" font-weight="700">MobiVital</text>
+    <text x="465" y="280" fill="#cbd5e1" font-size="17">Temassız solunum takibi</text>
+    <text x="465" y="316" fill="#cbd5e1" font-size="17">Sabit ve elde radar</text>
+    <rect x="810" y="140" width="330" height="230" rx="24" fill="#172033" stroke="#334155" stroke-width="2"/>
+    <text x="840" y="190" fill="#60a5fa" font-size="17" font-weight="700">VERİ SETİ TANITIMI</text>
+    <text x="840" y="240" fill="#ffffff" font-size="31" font-weight="700">OMuSense-23</text>
+    <text x="840" y="280" fill="#cbd5e1" font-size="17">Radar ve RGB-D kayıtları</text>
+    <text x="840" y="316" fill="#cbd5e1" font-size="17">Nefes ve poz etkinlikleri</text>
+  </g>
+</svg>

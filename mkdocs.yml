@@ -1,0 +1,114 @@
+site_name: UWB – Afet Çalışması
+site_description: UWB radar verileriyle afet ortamlarında insan varlığı tespitini araştıran İNOSENS staj projesi
+site_author: Hüseyin Enes Ertürk
+site_url: https://huseyineneserturk.github.io/UWB-Afet-Calismasi/
+
+docs_dir: .site-src
+site_dir: site
+use_directory_urls: true
+
+theme:
+  name: material
+  language: tr
+  logo: assets/images/inosens-logo.png
+  favicon: assets/images/inosens-logo.png
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Koyu temaya geç
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Açık temaya geç
+
+plugins:
+  - search:
+      lang: tr
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_css:
+  - assets/stylesheets/theme-v2.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js
+  - assets/javascripts/mermaid.js
+
+copyright: © 2026 Hüseyin Enes Ertürk · İNOSENS Yaz Stajı
+
+extra:
+  generator: false
+
+nav:
+  - Ana Sayfa: index.md
+  - Staj Günlüğü:
+      - Genel Bakış: docs/staj-gunlugu/index.md
+      - 1. Hafta: docs/staj-gunlugu/hafta-1.md
+      - 2. Hafta: docs/staj-gunlugu/hafta-2.md
+      - 3. Hafta: docs/staj-gunlugu/hafta-3.md
+      - 4. Hafta: docs/staj-gunlugu/hafta-4.md
+  - Başlangıç:
+      - Genel Bakış: docs/baslangic/index.md
+      - UWB Radar Temelleri: docs/baslangic/uwb-radar-temelleri.md
+  - Veri Setleri:
+      - Genel Bakış: docs/veri-setleri/index.md
+      - Rescuer: docs/veri-setleri/rescuer.md
+      - MobiVital: docs/veri-setleri/mobivital.md
+      - OMuSense-23: docs/veri-setleri/omusense-23.md
+      - Yayınlar ve Edinim:
+          - Genel Bakış: docs/veri-setleri/yayinlar-ve-edinim/index.md
+          - Rescuer: docs/veri-setleri/yayinlar-ve-edinim/rescuer.md
+          - MobiVital: docs/veri-setleri/yayinlar-ve-edinim/mobivital.md
+          - OMuSense-23: docs/veri-setleri/yayinlar-ve-edinim/omusense-23.md
+  - Teknoloji ve Ürünler:
+      - Genel Bakış: docs/teknoloji-ve-urunler/index.md
+      - UWB ve mmWave: docs/teknoloji-ve-urunler/uwb-mmwave-karsilastirmasi.md
+      - Radar Ürünleri: docs/teknoloji-ve-urunler/arama-kurtarma-urunleri.md
+      - Saha Yaklaşımı: docs/teknoloji-ve-urunler/saha-taramasi-ve-hibrit-yaklasim.md
+  - Afet Senaryoları:
+      - Genel Bakış: docs/senaryolar/index.md
+      - Doğrudan Görüş: docs/senaryolar/dogrudan-gorus.md
+      - Duvar Arkası: docs/senaryolar/duvar-arkasi.md
+      - Enkaz: docs/senaryolar/enkaz-karmasik-yansima.md
+      - Boş Ortam: docs/senaryolar/bos-ortam-yanlis-alarm.md
+  - Model:
+      - Model Günlüğü: docs/model/index.md
+      - Veriyi Hazırlama: docs/model/veri-hazirlama.md
+      - İlk Model: docs/model/ilk-model.md
+      - Sonuçlar: docs/model/sonuclar.md
+      - Model Karşılaştırması: docs/model/model-karsilastirmasi.md
+      - Hata Analizi: docs/model/hata-analizi.md
+      - Karar Eşiği: docs/model/karar-esigi.md
+  - Çalıştırma Rehberi: docs/kullanim/index.md
+  - Güvenli Kullanım:
+      - Genel Bakış: docs/guvenli-kullanim/index.md
+      - Sınırlamalar: docs/guvenli-kullanim/sinirlamalar.md
+      - Kaynakça: docs/guvenli-kullanim/kaynakca.md

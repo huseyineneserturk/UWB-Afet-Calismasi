@@ -1,0 +1,54 @@
+file,subject_condition,obstacle,target_distance_m,orientation,radar_placement,window_count,detected_count,mean_human_probability,missed_count,recall
+Human Presence/Person 8/Wall Obstacle/0.5m/4.5 not facing radar abs.csv,Person 8,wall,4.5,not_facing_radar,0.5m,4,0,0.032390499661491205,4,0.0
+Human Presence/Person 8/Wall Obstacle/0.5m/4 facing radar abs.csv,Person 8,wall,4.0,facing_radar,0.5m,4,0,0.047921668040629924,4,0.0
+Human Presence/Person 8/Wall Obstacle/0.2m/1.5 facing down abs.csv,Person 8,wall,1.5,facing_down,0.2m,4,1,0.3915740543940971,3,0.25
+Human Presence/Person 8/Wall Obstacle/0.2m/2 facing radar abs.csv,Person 8,wall,2.0,facing_radar,0.2m,4,2,0.510801601280789,2,0.5
+Human Presence/Person 9/No Obstacle/1m 0°/5 facing up abs.csv,Person 9,no_obstacle,5.0,facing_up,1m 0°,4,2,0.6304571349489727,2,0.5
+Human Presence/Person 9/Wall Obstacle/0.2m/3.5 facing up abs.csv,Person 9,wall,3.5,facing_up,0.2m,4,3,0.6224474763733527,1,0.75
+Human Presence/Person 8/Wall Obstacle/1m 45°/5 facing up abs.csv,Person 8,wall,5.0,facing_up,1m 45°,4,3,0.6908526056649061,1,0.75
+Human Presence/Person 8/Wall Obstacle/1m 0°/4 facing radar abs.csv,Person 8,wall,4.0,facing_radar,1m 0°,4,3,0.6979170577100378,1,0.75
+Human Presence/Person 8/Wall Obstacle/1m 0°/5 facing up abs.csv,Person 8,wall,5.0,facing_up,1m 0°,4,3,0.7037373724733103,1,0.75
+Human Presence/Person 8/Wall Obstacle/0.5m/5 facing up abs.csv,Person 8,wall,5.0,facing_up,0.5m,4,3,0.748430073044274,1,0.75
+Human Presence/Person 8/Wall Obstacle/0.2m/3 facing up abs.csv,Person 8,wall,3.0,facing_up,0.2m,4,3,0.7738264576622587,1,0.75
+Human Presence/Person 8/Wall Obstacle/0.5m/3 facing up abs.csv,Person 8,wall,3.0,facing_up,0.5m,4,3,0.8068418188549724,1,0.75
+Human Presence/Person 8/Wall Obstacle/1m 0°/3 facing up abs.csv,Person 8,wall,3.0,facing_up,1m 0°,4,3,0.8309420724924825,1,0.75
+Human Presence/Person 8/Wall Obstacle/0.2m/3.5 facing down abs.csv,Person 8,wall,3.5,facing_down,0.2m,4,3,0.8324472169550869,1,0.75
+Human Presence/Person 9/Wall Obstacle/0.2m/4 facing down abs.csv,Person 9,wall,4.0,facing_down,0.2m,4,3,0.8361060095941211,1,0.75
+Human Presence/Person 8/Wall Obstacle/0.2m/2.5 not facing radar abs.csv,Person 8,wall,2.5,not_facing_radar,0.2m,4,3,0.8531585872142352,1,0.75
+Human Presence/Person 8/Wall Obstacle/1m 45°/3 facing up abs.csv,Person 8,wall,3.0,facing_up,1m 45°,4,4,0.8342984578629847,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/2 facing down abs.csv,Person 9,wall,2.0,facing_down,0.2m,4,4,0.8426914875974276,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 45°/1.5 facing down abs.csv,Person 8,wall,1.5,facing_down,1m 45°,4,4,0.8792756643225432,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 0°/1 facing up abs.csv,Person 8,wall,1.0,facing_up,1m 0°,4,4,0.8987773709806333,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 45°/3.5 facing down abs.csv,Person 8,wall,3.5,facing_down,1m 45°,4,4,0.9083054686668964,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 0°/3.5 facing down abs.csv,Person 8,wall,3.5,facing_down,1m 0°,4,4,0.9184396328722428,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.5m/2 facing radar abs.csv,Person 8,wall,2.0,facing_radar,0.5m,4,4,0.9197503289826194,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.2m/5 facing up abs.csv,Person 8,wall,5.0,facing_up,0.2m,4,4,0.9276952329024504,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/5 not facing radar abs.csv,Person 9,wall,5.0,not_facing_radar,0.2m,4,4,0.9681202828129963,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/4.5 not facing radar abs.csv,Person 9,no_obstacle,4.5,not_facing_radar,1m 0°,4,4,0.9739465499711468,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.5m/3.5 facing down abs.csv,Person 8,wall,3.5,facing_down,0.5m,4,4,0.9758259183945974,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.5m/2.5 not facing radar abs.csv,Person 8,wall,2.5,not_facing_radar,0.5m,4,4,0.9763950396137941,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/4.5 facing radar abs.csv,Person 9,wall,4.5,facing_radar,0.2m,4,4,0.9775831865747604,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/2.5 facing radar abs.csv,Person 9,wall,2.5,facing_radar,0.2m,4,4,0.9782131817986954,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.5m/1 facing up abs.csv,Person 8,wall,1.0,facing_up,0.5m,4,4,0.9783953054252921,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.2m/4 facing radar abs.csv,Person 8,wall,4.0,facing_radar,0.2m,4,4,0.9834275713329402,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 45°/1 facing up abs.csv,Person 8,wall,1.0,facing_up,1m 45°,4,4,0.9838357901414552,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/3 facing up abs.csv,Person 9,no_obstacle,3.0,facing_up,1m 0°,4,4,0.9889497786167947,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.5m/1.5 facing down abs.csv,Person 8,wall,1.5,facing_down,0.5m,4,4,0.989333650674584,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 0°/4.5 not facing radar abs.csv,Person 8,wall,4.5,not_facing_radar,1m 0°,4,4,0.9895335800647116,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/1 not facing radar abs.csv,Person 9,wall,1.0,not_facing_radar,0.2m,4,4,0.9908774831492899,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 0°/2.5 not facing radar abs.csv,Person 8,wall,2.5,not_facing_radar,1m 0°,4,4,0.9965937808506216,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/2 facing radar abs.csv,Person 9,no_obstacle,2.0,facing_radar,1m 0°,4,4,0.997681388798199,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/3 not facing radar abs.csv,Person 9,wall,3.0,not_facing_radar,0.2m,4,4,0.9977875936851042,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 0°/2 facing radar abs.csv,Person 8,wall,2.0,facing_radar,1m 0°,4,4,0.9993139022802608,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.2m/1 facing up abs.csv,Person 8,wall,1.0,facing_up,0.2m,4,4,0.9995489254716005,0,1.0
+Human Presence/Person 8/Wall Obstacle/0.2m/4.5 not facing radar abs.csv,Person 8,wall,4.5,not_facing_radar,0.2m,4,4,0.9996008354957338,0,1.0
+Human Presence/Person 9/Wall Obstacle/0.2m/1.5 facing up abs.csv,Person 9,wall,1.5,facing_up,0.2m,4,4,0.9996730747258751,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 45°/4 facing radar abs.csv,Person 8,wall,4.0,facing_radar,1m 45°,4,4,0.9997305376619375,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 45°/2.5 not facing radar abs.csv,Person 8,wall,2.5,not_facing_radar,1m 45°,4,4,0.9997457519768944,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/4 facing radar abs.csv,Person 9,no_obstacle,4.0,facing_radar,1m 0°,4,4,0.9998991119782423,0,1.0
+Human Presence/Person 8/Wall Obstacle/1m 0°/1.5 facing down abs.csv,Person 8,wall,1.5,facing_down,1m 0°,4,4,0.9999019204175029,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/1 facing up abs.csv,Person 9,no_obstacle,1.0,facing_up,1m 0°,4,4,0.9999860352070189,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/3.5 facing down abs.csv,Person 9,no_obstacle,3.5,facing_down,1m 0°,4,4,0.9999920065131116,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/0.5 not facing radar abs.csv,Person 9,no_obstacle,0.5,not_facing_radar,1m 0°,4,4,0.9999931374767009,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/1.5 facing down abs.csv,Person 9,no_obstacle,1.5,facing_down,1m 0°,4,4,0.9999992056416582,0,1.0
+Human Presence/Person 9/No Obstacle/1m 0°/2.5 not facing radar abs.csv,Person 9,no_obstacle,2.5,not_facing_radar,1m 0°,4,4,0.9999999857628457,0,1.0

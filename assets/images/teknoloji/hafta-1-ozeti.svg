@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="390" viewBox="0 0 1200 390" role="img" aria-labelledby="title desc">
+  <title id="title">Birinci hafta araştırma özeti</title>
+  <desc id="desc">Teknoloji seçimi, ürün araştırması ve saha yaklaşımı başlıkları.</desc>
+  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#07111f"/><stop offset="1" stop-color="#12304a"/></linearGradient></defs>
+  <rect width="1200" height="390" rx="30" fill="url(#bg)"/>
+  <text x="65" y="67" fill="#f8fafc" font-family="Arial, sans-serif" font-size="30" font-weight="700">1. hafta araştırmasının üç çıktısı</text>
+  <text x="65" y="101" fill="#a5b4c7" font-family="Arial, sans-serif" font-size="17">Radar seçimini yalnızca frekansa değil, göreve ve saha koşuluna göre düşünmek.</text>
+  <g font-family="Arial, sans-serif">
+    <rect x="60" y="145" width="330" height="190" rx="24" fill="#fff7ed"/><circle cx="110" cy="194" r="25" fill="#f97316"/>
+    <path d="M93 200c16-25 30-25 43 0M97 209c12-16 23-16 34 0" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <text x="150" y="203" fill="#9a3412" font-size="20" font-weight="700">Teknoloji seçimi</text><text x="90" y="253" fill="#334155" font-size="17">UWB ve mmWave farkı</text><text x="90" y="286" fill="#334155" font-size="17">Derinlik ve çözünürlük dengesi</text>
+    <rect x="435" y="145" width="330" height="190" rx="24" fill="#ecfeff"/><circle cx="485" cy="194" r="25" fill="#0891b2"/><rect x="472" y="181" width="26" height="26" rx="5" fill="none" stroke="#fff" stroke-width="4"/>
+    <text x="525" y="203" fill="#155e75" font-size="20" font-weight="700">Ürün araştırması</text><text x="465" y="253" fill="#334155" font-size="17">Küresel radar örnekleri</text><text x="465" y="286" fill="#334155" font-size="17">Doğrudan ve tamamlayıcı çözümler</text>
+    <rect x="810" y="145" width="330" height="190" rx="24" fill="#f0fdf4"/><circle cx="860" cy="194" r="25" fill="#16a34a"/><path d="M847 207v-28h26v28m-20-18h14m-14 8h14" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+    <text x="900" y="203" fill="#166534" font-size="20" font-weight="700">Saha yaklaşımı</text><text x="840" y="253" fill="#334155" font-size="17">Düzenli tarama noktaları</text><text x="840" y="286" fill="#334155" font-size="17">Birden fazla sensörle doğrulama</text>
+  </g>
+</svg>

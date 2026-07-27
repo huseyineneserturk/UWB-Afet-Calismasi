@@ -1,0 +1,205 @@
+{
+  "model": "StandardScaler + LogisticRegression(class_weight='balanced')",
+  "analysis_rule": "same_baseline_model_same_test_split",
+  "test_subjects": [
+    "Person 8",
+    "Person 9"
+  ],
+  "test_windows": {
+    "human": 212,
+    "empty": 186
+  },
+  "overall_metrics": {
+    "accuracy": 0.9020100502512562,
+    "balanced_accuracy": 0.9037330087238791,
+    "precision_human": 0.9346733668341709,
+    "recall_human": 0.8773584905660378,
+    "f1_human": 0.9051094890510949
+  },
+  "false_alarms": 13,
+  "missed_human_windows": 26,
+  "condition_summaries": {
+    "obstacle": [
+      {
+        "dimension": "obstacle",
+        "group_value": "no_obstacle",
+        "window_count": 40,
+        "detected_count": 38,
+        "missed_count": 2,
+        "recall": 0.95,
+        "mean_human_probability": 0.9590904334914692
+      },
+      {
+        "dimension": "obstacle",
+        "group_value": "wall",
+        "window_count": 172,
+        "detected_count": 148,
+        "missed_count": 24,
+        "recall": 0.8604651162790697,
+        "mean_human_probability": 0.8440015239105231
+      }
+    ],
+    "orientation": [
+      {
+        "dimension": "orientation",
+        "group_value": "facing_up",
+        "window_count": 68,
+        "detected_count": 59,
+        "missed_count": 9,
+        "recall": 0.8676470588235294,
+        "mean_human_probability": 0.8481585284028609
+      },
+      {
+        "dimension": "orientation",
+        "group_value": "facing_down",
+        "window_count": 48,
+        "detected_count": 43,
+        "missed_count": 5,
+        "recall": 0.8958333333333334,
+        "mean_human_probability": 0.8811576863369891
+      },
+      {
+        "dimension": "orientation",
+        "group_value": "facing_radar",
+        "window_count": 44,
+        "detected_count": 37,
+        "missed_count": 7,
+        "recall": 0.8409090909090909,
+        "mean_human_probability": 0.8283854124035557
+      },
+      {
+        "dimension": "orientation",
+        "group_value": "not_facing_radar",
+        "window_count": 52,
+        "detected_count": 47,
+        "missed_count": 5,
+        "recall": 0.9038461538461539,
+        "mean_human_probability": 0.9060110082873513
+      }
+    ],
+    "subject_condition": [
+      {
+        "dimension": "subject_condition",
+        "group_value": "Person 8",
+        "window_count": 136,
+        "detected_count": 114,
+        "missed_count": 22,
+        "recall": 0.8382352941176471,
+        "mean_human_probability": 0.8258401691717902
+      },
+      {
+        "dimension": "subject_condition",
+        "group_value": "Person 9",
+        "window_count": 76,
+        "detected_count": 72,
+        "missed_count": 4,
+        "recall": 0.9473684210526315,
+        "mean_human_probability": 0.9370739005908585
+      }
+    ],
+    "target_distance_m": [
+      {
+        "dimension": "target_distance_m",
+        "group_value": 0.5,
+        "window_count": 4,
+        "detected_count": 4,
+        "missed_count": 0,
+        "recall": 1.0,
+        "mean_human_probability": 0.9999931374767009
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 1.0,
+        "window_count": 24,
+        "detected_count": 24,
+        "missed_count": 0,
+        "recall": 1.0,
+        "mean_human_probability": 0.9752368183958816
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 1.5,
+        "window_count": 24,
+        "detected_count": 21,
+        "missed_count": 3,
+        "recall": 0.875,
+        "mean_human_probability": 0.8766262616960434
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 2.0,
+        "window_count": 20,
+        "detected_count": 18,
+        "missed_count": 2,
+        "recall": 0.9,
+        "mean_human_probability": 0.8540477417878591
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 2.5,
+        "window_count": 24,
+        "detected_count": 23,
+        "missed_count": 1,
+        "recall": 0.9583333333333334,
+        "mean_human_probability": 0.9673510545361811
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 3.0,
+        "window_count": 24,
+        "detected_count": 21,
+        "missed_count": 3,
+        "recall": 0.875,
+        "mean_human_probability": 0.8721076965290996
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 3.5,
+        "window_count": 24,
+        "detected_count": 22,
+        "missed_count": 2,
+        "recall": 0.9166666666666666,
+        "mean_human_probability": 0.8762429532958813
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 4.0,
+        "window_count": 24,
+        "detected_count": 18,
+        "missed_count": 6,
+        "recall": 0.75,
+        "mean_human_probability": 0.7608336593863182
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 4.5,
+        "window_count": 20,
+        "detected_count": 16,
+        "missed_count": 4,
+        "recall": 0.8,
+        "mean_human_probability": 0.7946109303535688
+      },
+      {
+        "dimension": "target_distance_m",
+        "group_value": 5.0,
+        "window_count": 24,
+        "detected_count": 19,
+        "missed_count": 5,
+        "recall": 0.7916666666666666,
+        "mean_human_probability": 0.7782154503078184
+      }
+    ]
+  },
+  "skipped_file_count": 1,
+  "confounding_notes": [
+    "Person 8 test kayıtlarının tamamı duvarlıdır.",
+    "Person 9 duvarlı ve duvarsız kayıtlarında radar yerleşimleri farklıdır.",
+    "Duvar sonuçları duvarın tek başına nedensel etkisi olarak yorumlanamaz."
+  ],
+  "limitations": [
+    "Sonuçlar yalnızca Person 8 ve Person 9 test pencerelerini kapsar.",
+    "Bazı koşullarda pencere sayısı düşüktür.",
+    "Aynı dosyadan gelen pencereler bağımsız saha deneyleri değildir.",
+    "Gerçek enkaz koşulları Rescuer veri setinde yoktur."
+  ]
+}

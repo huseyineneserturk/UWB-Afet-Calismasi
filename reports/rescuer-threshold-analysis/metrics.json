@@ -1,0 +1,150 @@
+{
+  "model": "StandardScaler + LogisticRegression(class_weight='balanced')",
+  "task": "validation_based_decision_threshold_selection",
+  "random_seed": 42,
+  "default_threshold": 0.5,
+  "selected_threshold": 0.33,
+  "target_validation_recall": 0.95,
+  "selection_rule": "meet_target_recall_then_minimize_false_alarms",
+  "validation_subject": "Person 7",
+  "test_subjects": [
+    "Person 8",
+    "Person 9"
+  ],
+  "validation_empty_files": [
+    "No human Presence/No Movement/Abs/clean amplitude NoPresence Lab_15mins3.csv",
+    "No human Presence/No Movement/Abs/clean amplitude_NoPresence Out 15mins.csv"
+  ],
+  "file_counts": {
+    "train": {
+      "human": 271,
+      "empty": 7
+    },
+    "validation": {
+      "human": 36,
+      "empty": 2
+    },
+    "test": {
+      "human": 54,
+      "empty": 3
+    }
+  },
+  "window_counts": {
+    "test": {
+      "human_absent": 186,
+      "human_present": 212
+    },
+    "train": {
+      "human_absent": 535,
+      "human_present": 1084
+    },
+    "validation": {
+      "human_absent": 138,
+      "human_present": 142
+    }
+  },
+  "validation": {
+    "default_threshold": {
+      "threshold": 0.5,
+      "accuracy": 0.9464285714285714,
+      "balanced_accuracy": 0.9471830985915493,
+      "precision_human": 1.0,
+      "recall_human": 0.8943661971830986,
+      "f1_human": 0.9442379182156134,
+      "empty_accuracy": 1.0,
+      "false_alarms": 0,
+      "missed_human_windows": 15,
+      "detected_human_windows": 127,
+      "confusion_matrix": [
+        [
+          138,
+          0
+        ],
+        [
+          15,
+          127
+        ]
+      ]
+    },
+    "selected_threshold": {
+      "threshold": 0.33,
+      "accuracy": 0.9821428571428571,
+      "balanced_accuracy": 0.9823943661971831,
+      "precision_human": 1.0,
+      "recall_human": 0.9647887323943662,
+      "f1_human": 0.982078853046595,
+      "empty_accuracy": 1.0,
+      "false_alarms": 0,
+      "missed_human_windows": 5,
+      "detected_human_windows": 137,
+      "confusion_matrix": [
+        [
+          138,
+          0
+        ],
+        [
+          5,
+          137
+        ]
+      ]
+    }
+  },
+  "untouched_test": {
+    "default_threshold": {
+      "threshold": 0.5,
+      "accuracy": 0.907035175879397,
+      "balanced_accuracy": 0.9097687157638467,
+      "precision_human": 0.9533678756476683,
+      "recall_human": 0.8679245283018868,
+      "f1_human": 0.908641975308642,
+      "empty_accuracy": 0.9516129032258065,
+      "false_alarms": 9,
+      "missed_human_windows": 28,
+      "detected_human_windows": 184,
+      "confusion_matrix": [
+        [
+          177,
+          9
+        ],
+        [
+          28,
+          184
+        ]
+      ]
+    },
+    "selected_threshold": {
+      "threshold": 0.33,
+      "accuracy": 0.8492462311557789,
+      "balanced_accuracy": 0.8443142625278961,
+      "precision_human": 0.819327731092437,
+      "recall_human": 0.9198113207547169,
+      "f1_human": 0.8666666666666667,
+      "empty_accuracy": 0.7688172043010753,
+      "false_alarms": 43,
+      "missed_human_windows": 17,
+      "detected_human_windows": 195,
+      "confusion_matrix": [
+        [
+          143,
+          43
+        ],
+        [
+          17,
+          195
+        ]
+      ]
+    }
+  },
+  "recommendation": {
+    "adopt_selected_threshold": false,
+    "current_default_threshold": 0.5,
+    "reason": "Doğrulama adayı testte insan yakalamayı artırdı; ancak yanlış alarm ve dengeli doğruluk belirgin biçimde kötüleşti. Yeni bir eşik seçmek için test kullanılmamalıdır."
+  },
+  "skipped_file_count": 1,
+  "limitations": [
+    "Karar eşiği yalnızca Person 7 ve iki insan-yok dosyasıyla seçilmiştir.",
+    "Aynı dosyadan gelen pencereler bağımsız saha deneyleri değildir.",
+    "İnsan-yok kayıtlarının sayısı ve çeşitliliği sınırlıdır.",
+    "Gerçek enkaz koşulları Rescuer veri setinde yoktur."
+  ]
+}

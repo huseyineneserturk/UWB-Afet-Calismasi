@@ -1,0 +1,557 @@
+:root {
+  --md-primary-fg-color: #0a3446;
+  --md-primary-fg-color--light: #126078;
+  --md-primary-fg-color--dark: #061f2b;
+  --md-primary-bg-color: #ffffff;
+  --md-accent-fg-color: #d85f2f;
+  --md-typeset-a-color: #087f91;
+  --uwb-cyan: #1098a8;
+  --uwb-cyan-bright: #39c3d1;
+  --uwb-orange: #e66f3b;
+  --uwb-ink: #102d3a;
+  --uwb-muted: #55717d;
+  --uwb-border: rgba(13, 106, 123, 0.16);
+  --uwb-surface: rgba(255, 255, 255, 0.92);
+  --uwb-surface-soft: #f3f8fa;
+  --uwb-shadow: 0 1.1rem 3rem rgba(7, 38, 51, 0.09);
+}
+
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color: #0d4052;
+  --md-primary-fg-color--light: #17677d;
+  --md-primary-fg-color--dark: #071f2b;
+  --md-primary-bg-color: #f5fbfd;
+  --md-accent-fg-color: #ff9b70;
+  --md-default-bg-color: #071820;
+  --md-default-fg-color: #edf6f8;
+  --md-default-fg-color--light: #c8d9de;
+  --md-default-fg-color--lighter: #a8c0c8;
+  --md-default-fg-color--lightest: rgba(168, 192, 200, 0.20);
+  --md-typeset-color: #edf6f8;
+  --md-typeset-a-color: #64d8e4;
+  --md-code-fg-color: #e6f5f8;
+  --md-code-bg-color: #102a35;
+  --md-admonition-fg-color: #edf6f8;
+  --md-admonition-bg-color: #102832;
+  --uwb-cyan: #4bd1dd;
+  --uwb-cyan-bright: #73e2ea;
+  --uwb-orange: #ff9b70;
+  --uwb-ink: #f4fafb;
+  --uwb-muted: #b9cdd3;
+  --uwb-border: rgba(91, 213, 225, 0.22);
+  --uwb-surface: rgba(13, 35, 45, 0.94);
+  --uwb-surface-soft: #0d2631;
+  --uwb-shadow: 0 1.2rem 3.4rem rgba(0, 0, 0, 0.28);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at 88% 7%, rgba(22, 166, 182, 0.13), transparent 27rem),
+    radial-gradient(circle at 8% 82%, rgba(230, 111, 59, 0.06), transparent 24rem),
+    var(--md-default-bg-color);
+}
+
+body,
+input {
+  font-family: "Segoe UI", "Inter", "Roboto", sans-serif;
+}
+
+::selection {
+  color: #ffffff;
+  background: #087f91;
+}
+
+.md-header {
+  background: linear-gradient(112deg, #061f2b 0%, #0a4155 60%, #0b7180 100%);
+  border-bottom: 1px solid rgba(104, 224, 233, 0.18);
+  box-shadow: 0 0.45rem 1.8rem rgba(3, 26, 36, 0.26);
+}
+
+.md-header__title {
+  font-weight: 750;
+  letter-spacing: -0.015em;
+}
+
+.md-header__button {
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.md-header__button:hover {
+  color: #8ce8ee;
+  transform: translateY(-1px);
+}
+
+.md-header__button.md-logo img,
+.md-header__button.md-logo svg {
+  width: auto;
+  height: 2rem;
+  padding: 0.16rem 0.34rem;
+  border-radius: 0.45rem;
+  background: #ffffff;
+  box-shadow: 0 0.22rem 0.75rem rgba(0, 0, 0, 0.18);
+}
+
+.md-tabs {
+  border-bottom: 1px solid rgba(97, 220, 229, 0.12);
+  background: rgba(5, 29, 40, 0.97);
+}
+
+.md-tabs__link {
+  color: rgba(255, 255, 255, 0.76);
+  font-weight: 650;
+  opacity: 1;
+  transition: color 160ms ease;
+}
+
+.md-tabs__link:hover,
+.md-tabs__link--active {
+  color: #ffffff;
+}
+
+.md-search__form {
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  border-radius: 0.65rem;
+  background: rgba(255, 255, 255, 0.11);
+}
+
+.md-main__inner {
+  margin-top: 1.7rem;
+}
+
+.md-content {
+  min-width: 0;
+}
+
+.md-content__inner {
+  margin-bottom: 2.5rem;
+  padding: 2.2rem 2.5rem 3.2rem;
+  border: 1px solid var(--uwb-border);
+  border-radius: 1.35rem;
+  background: var(--uwb-surface);
+  box-shadow: var(--uwb-shadow);
+  backdrop-filter: blur(12px);
+}
+
+.md-content__inner::before {
+  display: none;
+}
+
+.md-typeset {
+  color: var(--md-default-fg-color);
+  font-size: 0.83rem;
+  line-height: 1.78;
+}
+
+.md-typeset > :first-child {
+  margin-top: 0;
+}
+
+.md-typeset h1 {
+  position: relative;
+  margin-bottom: 1.8rem;
+  padding-bottom: 0.8rem;
+  color: var(--uwb-ink);
+  font-size: clamp(2rem, 4vw, 2.65rem);
+  font-weight: 820;
+  letter-spacing: -0.04em;
+}
+
+.md-typeset h1::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 4.5rem;
+  height: 0.24rem;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--uwb-orange), var(--uwb-cyan));
+  content: "";
+}
+
+.md-typeset h2 {
+  margin-top: 2.7rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--uwb-border);
+  color: var(--uwb-ink);
+  font-weight: 770;
+  letter-spacing: -0.025em;
+}
+
+.md-typeset h3 {
+  margin-top: 2rem;
+  color: var(--uwb-cyan);
+  font-weight: 730;
+}
+
+.md-typeset p,
+.md-typeset li,
+.md-typeset dd,
+.md-typeset dt,
+.md-typeset figcaption,
+.md-typeset small {
+  color: var(--md-default-fg-color);
+}
+
+.md-typeset strong {
+  color: var(--uwb-ink);
+}
+
+.md-typeset a {
+  color: var(--md-typeset-a-color);
+  font-weight: 650;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.18em;
+  transition: color 150ms ease, text-decoration-color 150ms ease;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus-visible {
+  color: var(--md-accent-fg-color);
+  text-decoration-color: currentColor;
+}
+
+.md-typeset hr {
+  border-color: var(--uwb-border);
+}
+
+.md-typeset img {
+  border-radius: 1rem;
+}
+
+.md-typeset img[alt="Afet alanında UWB radar ile insan arama çalışması"] {
+  width: 100%;
+  max-height: 27rem;
+  object-fit: cover;
+  border: 1px solid var(--uwb-border);
+  box-shadow: 0 1.2rem 2.8rem rgba(6, 37, 49, 0.20);
+}
+
+.md-typeset img[alt="İNOSENS logosu"] {
+  max-width: min(100%, 22rem);
+  padding: 0.75rem 1.1rem;
+  border: 1px solid rgba(11, 44, 61, 0.11);
+  border-radius: 0.9rem;
+  background: #ffffff;
+  box-shadow: 0 0.65rem 1.6rem rgba(7, 31, 44, 0.11);
+}
+
+.md-typeset__table {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.md-typeset table:not([class]) {
+  display: table;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid var(--uwb-border);
+  border-radius: 0.9rem;
+  background: var(--uwb-surface);
+  box-shadow: 0 0.7rem 1.8rem rgba(7, 31, 44, 0.08);
+}
+
+.md-typeset table:not([class]) th {
+  padding: 0.86rem 0.95rem;
+  border-color: rgba(255, 255, 255, 0.12);
+  background: linear-gradient(118deg, #083448, #0d6a7b);
+  color: #ffffff;
+  font-weight: 730;
+}
+
+.md-typeset table:not([class]) td {
+  padding: 0.78rem 0.95rem;
+  border-color: var(--uwb-border);
+  color: var(--md-default-fg-color);
+  vertical-align: top;
+}
+
+.md-typeset table:not([class]) tbody tr {
+  background: transparent;
+  transition: background 150ms ease;
+}
+
+.md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(16, 152, 168, 0.055);
+}
+
+.md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(16, 152, 168, 0.10);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) {
+  background: #0b222c;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.20);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:nth-child(even) {
+  background: rgba(75, 209, 221, 0.075);
+}
+
+[data-md-color-scheme="slate"] .md-typeset table:not([class]) tbody tr:hover {
+  background: rgba(75, 209, 221, 0.13);
+}
+
+.md-typeset code {
+  padding: 0.12em 0.36em;
+  border: 1px solid var(--uwb-border);
+  border-radius: 0.34rem;
+  color: var(--md-code-fg-color);
+  background: var(--md-code-bg-color);
+}
+
+.md-typeset pre {
+  border: 1px solid var(--uwb-border);
+  border-radius: 0.85rem;
+  box-shadow: 0 0.6rem 1.4rem rgba(7, 31, 44, 0.08);
+}
+
+.md-typeset pre > code {
+  border: 0;
+  border-radius: 0.85rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  overflow: hidden;
+  border-width: 0;
+  border-left: 0.25rem solid var(--uwb-cyan);
+  border-radius: 0.8rem;
+  color: var(--md-admonition-fg-color);
+  background: var(--md-admonition-bg-color);
+  box-shadow: 0 0.65rem 1.6rem rgba(7, 31, 44, 0.09);
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  color: var(--uwb-ink);
+}
+
+.md-typeset .admonition.danger,
+.md-typeset .admonition.warning {
+  border-left-color: var(--uwb-orange);
+}
+
+.md-typeset blockquote {
+  margin-left: 0;
+  padding: 0.75rem 1.1rem;
+  border-left: 0.24rem solid var(--uwb-cyan);
+  border-radius: 0 0.7rem 0.7rem 0;
+  color: var(--md-default-fg-color);
+  background: rgba(16, 152, 168, 0.07);
+}
+
+.mermaid {
+  margin: 1.6rem 0;
+  padding: 1.25rem;
+  overflow-x: auto;
+  border: 1px solid var(--uwb-border);
+  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 0.7rem 1.8rem rgba(7, 31, 44, 0.08);
+  text-align: center;
+}
+
+[data-md-color-scheme="slate"] .mermaid {
+  background: #102c38;
+  box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.22);
+}
+
+.md-nav {
+  color: var(--md-default-fg-color);
+}
+
+.md-nav__title {
+  color: var(--uwb-ink);
+  font-weight: 750;
+}
+
+.md-nav__link {
+  color: var(--uwb-muted);
+  transition: color 150ms ease, transform 150ms ease;
+}
+
+.md-nav__link:hover {
+  color: var(--md-typeset-a-color);
+  transform: translateX(0.1rem);
+}
+
+.md-nav__link--active {
+  color: var(--uwb-orange);
+  font-weight: 750;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link {
+  color: #b9cdd3;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link:hover {
+  color: #75e0e8;
+}
+
+[data-md-color-scheme="slate"] .md-nav__link--active {
+  color: #ffad89;
+}
+
+.md-sidebar__scrollwrap {
+  scrollbar-color: rgba(16, 152, 168, 0.38) transparent;
+}
+
+.md-top {
+  border: 1px solid var(--uwb-border);
+  border-radius: 0.65rem;
+  color: var(--uwb-ink);
+  background: var(--uwb-surface);
+  box-shadow: var(--uwb-shadow);
+}
+
+.md-footer {
+  border-top: 1px solid rgba(85, 207, 218, 0.13);
+  background: #061f2b;
+}
+
+.md-footer-meta {
+  background: #041820;
+}
+
+.md-footer,
+.md-footer a,
+.md-footer__title,
+.md-footer__direction,
+.md-footer-meta,
+.md-footer-meta a {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+.md-footer a:hover {
+  color: #78e0e8;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a,
+[data-md-color-scheme="slate"] .md-typeset a:visited {
+  color: #73dfe8 !important;
+}
+
+[data-md-color-scheme="slate"] .md-typeset a:hover,
+[data-md-color-scheme="slate"] .md-typeset a:focus-visible {
+  color: #ffad89 !important;
+}
+
+.md-typeset > p:first-child,
+.md-typeset hr + p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  align-items: center;
+}
+
+.md-typeset > p:first-child a,
+.md-typeset hr + p a,
+.md-typeset > p > a:only-child {
+  display: inline-flex;
+  gap: 0.35rem;
+  align-items: center;
+  padding: 0.38rem 0.68rem;
+  border: 1px solid var(--uwb-border);
+  border-radius: 0.6rem;
+  color: var(--md-typeset-a-color);
+  background: rgba(16, 152, 168, 0.07);
+  line-height: 1.35;
+}
+
+.md-typeset > p:first-child a:hover,
+.md-typeset hr + p a:hover,
+.md-typeset > p > a:only-child:hover {
+  border-color: currentColor;
+  background: rgba(16, 152, 168, 0.12);
+  text-decoration: none;
+}
+
+[data-md-color-scheme="slate"] .md-typeset > p:first-child a,
+[data-md-color-scheme="slate"] .md-typeset hr + p a,
+[data-md-color-scheme="slate"] .md-typeset > p > a:only-child {
+  border-color: rgba(115, 223, 232, 0.30);
+  color: #8ee8ee !important;
+  background: rgba(75, 209, 221, 0.11);
+}
+
+[data-md-color-scheme="slate"] .md-typeset > p:first-child a:hover,
+[data-md-color-scheme="slate"] .md-typeset hr + p a:hover,
+[data-md-color-scheme="slate"] .md-typeset > p > a:only-child:hover {
+  border-color: #ffad89;
+  color: #ffc0a5 !important;
+  background: rgba(255, 155, 112, 0.12);
+}
+
+[data-md-color-scheme="slate"] .md-footer__link,
+[data-md-color-scheme="slate"] .md-footer__title,
+[data-md-color-scheme="slate"] .md-footer__direction {
+  color: #edf6f8 !important;
+}
+
+:focus-visible {
+  outline: 0.16rem solid var(--uwb-orange);
+  outline-offset: 0.16rem;
+}
+
+@media screen and (max-width: 76.234375em) {
+  .md-main__inner {
+    margin-top: 1rem;
+  }
+
+  .md-content__inner {
+    padding: 1.8rem 1.6rem 2.7rem;
+  }
+
+  .md-typeset__table {
+    overflow-x: auto;
+  }
+
+  .md-typeset table:not([class]) {
+    display: table;
+    min-width: 34rem;
+  }
+}
+
+@media screen and (max-width: 44.984375em) {
+  .md-content__inner {
+    margin: 0 -0.2rem 1.5rem;
+    padding: 1.4rem 1rem 2.3rem;
+    border-right: 0;
+    border-left: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .md-typeset {
+    font-size: 0.79rem;
+    line-height: 1.72;
+  }
+
+  .md-typeset h1 {
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+  }
+
+  .md-typeset h2 {
+    margin-top: 2.25rem;
+  }
+
+  .md-typeset img[alt="Afet alanında UWB radar ile insan arama çalışması"] {
+    max-height: 16rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -1,0 +1,7 @@
+split,class_name,window_count,file_count
+test,human_absent,186,3
+test,human_present,212,53
+train,human_absent,535,7
+train,human_present,1084,271
+validation,human_absent,138,2
+validation,human_present,142,36
